@@ -1,0 +1,25 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>Login</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<form (ngSubmit)="logForm()">
+		<ion-item>
+			<ion-input type="email" [(ngModel)]="user.email" name="title" placeholder="Email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="password" [(ngModel)]="user.password" name="password" placeholder="Password" clear-input="true" clear-on-edit="true"></ion-input>
+		</ion-item>
+		<ion-row>
+			<ion-col size="6">
+				<ion-button type="submit" expand="full" shape="round" color="success" fill="outline" size="6">Go Inside</ion-button>
+			</ion-col>
+			<ion-col size="6">
+				<ion-button type="reset" expand="full" shape="round" color="warning" fill="outline" size="6">Reset</ion-button>
+			</ion-col>
+		</ion-row>
+	</form>
+	<ion-button expand="full" shape="round" color="tertiary" fill="outline" router-direction="forward" href="/forgot">Password Missing?</ion-button>
+</ion-content>
