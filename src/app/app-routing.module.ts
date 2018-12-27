@@ -14,6 +14,12 @@ const routes: Routes = [{
 }, {
 	path: 'login',
 	loadChildren: './login/login.module#LoginPageModule',
+}, {
+	path: 'forgot',
+	loadChildren: './forgot/forgot.module#ForgotPageModule'
+}, {
+	path: 'reset',
+	loadChildren: './reset/reset.module#ResetPageModule'
 }];
 
 @NgModule({
