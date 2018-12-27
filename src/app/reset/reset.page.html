@@ -1,0 +1,21 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>Reset</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<form (ngSubmit)="logForm()">
+		<ion-item>
+			<ion-input type="text" [(ngModel)]="user.token" name="token" placeholder="Token"></ion-input>
+		</ion-item>
+		<ion-row>
+			<ion-col size="6">
+				<ion-button type="submit" expand="full" shape="round" color="success" fill="outline" size="6">Get Password</ion-button>
+			</ion-col>
+			<ion-col size="6">
+				<ion-button expand="full" shape="round" color="tertiary" fill="outline" router-direction="forward" href="/login">Got Password!!!</ion-button>
+			</ion-col>
+		</ion-row>
+	</form>
+</ion-content>
